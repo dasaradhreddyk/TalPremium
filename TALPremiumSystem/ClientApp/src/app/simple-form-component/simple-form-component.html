@@ -1,25 +1,26 @@
-<form #f="ngForm" novalidate style="margin:100px 100px;">
-  <div style="width:100px">
-    <label>Name</label>
-    <input name="name" required [(ngModel)]="name">
-  </div>
-  <div style="width:100px">
-    <label>Age</label>
-    <input name="age" type="number" ngModel required [(ngModel)]="age">
-  </div>
-  <div style="width:100px">
-    <label>Death Amount Insure</label>
-    <input name="amount" type="number" ngModel required [(ngModel)]="deathSumInsured">
-  </div>
-  <div style="width:200px">
-    <label>Date Of Birth</label>
-    <input type="text" required />
-  </div>
-  <div style="width:100px">
-    <label>Occupation</label>
-    <select [(ngModel)]='occupation' name="dropdownOption" id="dropdownOption" class='form-control' (change)="setValue(f )">
-     <!-- <select class="form-control" [(ngModel)]="occupation" #selectList (change)="setValue(f ,$event.target.value)">-->
-        Occupation
+
+<div style="border-color:orangered;border:RID; width:800px">
+  <form #f="ngForm" novalidate style="margin:100px 100px;">
+    <div>
+      <label style="width: 250px">Name</label>
+      <input name="name" required [(ngModel)]="name">
+    </div>
+    <div>
+      <label style="width: 250px">Age</label>
+      <input name="age" type="number" ngModel required [(ngModel)]="age">
+    </div>
+    <div>
+      <label style="width: 250px">Death Amount Insure</label>
+      <input name="amount" type="number" ngModel required [(ngModel)]="deathSumInsured">
+    </div>
+    <div>
+      <label style="width: 250px">Date Of Birth</label>
+      <input type="date" required />
+    </div>
+    <div style="width:450px">
+      <label >Occupation</label>
+      <select [(ngModel)]='occupation' name="dropdownOption" id="dropdownOption" class='form-control' (change)="setValue(f )">
+        <option selected disabled hidden>-------Select Occupaiton------</option>
         <option>Cleaner</option>
         <option>Doctor</option>
         <option>Author</option>
@@ -27,8 +28,9 @@
         <option>Mechanic</option>
         <option>Florist</option>
       </select>
-  </div>
-  <h1> Premium Value  {{ premium }}</h1>
-</form>
-<p>Form valid: {{ errorMessage }}</p>
+    </div>
+    <h3> Premium Value  {{ premium }}</h3>
+  </form>
+  <p>Form valid: {{ errorMessage }}</p>
   `
+  </div>
