@@ -1,0 +1,34 @@
+<form #f="ngForm" novalidate style="margin:100px 100px;">
+  <div style="width:100px">
+    <label>Name</label>
+    <input name="name" required [(ngModel)]="name">
+  </div>
+  <div style="width:100px">
+    <label>Age</label>
+    <input name="age" type="number" ngModel required [(ngModel)]="age">
+  </div>
+  <div style="width:100px">
+    <label>Death Amount Insure</label>
+    <input name="amount" type="number" ngModel required [(ngModel)]="deathSumInsured">
+  </div>
+  <div style="width:200px">
+    <label>Date Of Birth</label>
+    <input type="text" required />
+  </div>
+  <div style="width:100px">
+    <label>Occupation</label>
+    <select [(ngModel)]='occupation' name="dropdownOption" id="dropdownOption" class='form-control' (change)="setValue(f )">
+     <!-- <select class="form-control" [(ngModel)]="occupation" #selectList (change)="setValue(f ,$event.target.value)">-->
+        Occupation
+        <option>Cleaner</option>
+        <option>Doctor</option>
+        <option>Author</option>
+        <option>Farmer</option>
+        <option>Mechanic</option>
+        <option>Florist</option>
+      </select>
+  </div>
+  <h1> Premium Value  {{ premium }}</h1>
+</form>
+<p>Form valid: {{ errorMessage }}</p>
+  `

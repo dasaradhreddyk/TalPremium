@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "BmXM9dTf9dad9Oh3I0GRMoNAEJZ2J75MGFEu/arrJwg=",
+  "Source": "TALPremiumSystem",
+  "BasePath": "_content/TALPremiumSystem",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TALPremiumSystem\\wwwroot",
+      "Source": "TALPremiumSystem",
+      "ContentRoot": "C:\\Users\\DKalapureddy\\source\\repos\\TALPremiumSystem\\TALPremiumSystem\\wwwroot\\",
+      "BasePath": "_content/TALPremiumSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\DKalapureddy\\source\\repos\\TALPremiumSystem\\TALPremiumSystem\\wwwroot\\favicon.ico",
+      "SourceId": "TALPremiumSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DKalapureddy\\source\\repos\\TALPremiumSystem\\TALPremiumSystem\\wwwroot\\",
+      "BasePath": "_content/TALPremiumSystem",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}

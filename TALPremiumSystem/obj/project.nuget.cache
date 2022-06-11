@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "57Ec1ZqfFAXGgAiWv7E5fq6pjsGveE7pGI6mGuGhxQe49eMOS/ZN91ZOXOasmIna27tpmoiQCuVDzuRSwXSW8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DKalapureddy\\source\\repos\\TALPremiumSystem\\TALPremiumSystem\\TALPremiumSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DKalapureddy\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\6.0.5\\microsoft.aspnetcore.spaproxy.6.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
