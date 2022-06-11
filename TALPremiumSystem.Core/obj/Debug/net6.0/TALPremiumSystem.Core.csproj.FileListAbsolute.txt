@@ -1,0 +1,12 @@
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\obj\Debug\net6.0\TALPremiumSystem.Core.csproj.AssemblyReference.cache
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\obj\Debug\net6.0\TALPremiumSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\obj\Debug\net6.0\TALPremiumSystem.Core.AssemblyInfoInputs.cache
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\obj\Debug\net6.0\TALPremiumSystem.Core.AssemblyInfo.cs
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\obj\Debug\net6.0\TALPremiumSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\bin\Debug\net6.0\TALPremiumSystem.Core.deps.json
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\bin\Debug\net6.0\TALPremiumSystem.Core.dll
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\bin\Debug\net6.0\TALPremiumSystem.Core.pdb
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\obj\Debug\net6.0\TALPremiumSystem.Core.dll
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\obj\Debug\net6.0\refint\TALPremiumSystem.Core.dll
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\obj\Debug\net6.0\TALPremiumSystem.Core.pdb
+C:\Users\DKalapureddy\source\repos\TALPremiumSystem\TALPremiumSystem.Core\obj\Debug\net6.0\ref\TALPremiumSystem.Core.dll
