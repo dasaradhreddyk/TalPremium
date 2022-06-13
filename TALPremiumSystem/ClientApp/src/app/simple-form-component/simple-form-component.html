@@ -1,36 +1,48 @@
 
-<div style="border-color:orangered;border:RID; width:800px">
+<div style="border-color:orangered;border:ridge; border-color:forestgreen; width:800px">
   <form #f="ngForm" novalidate style="margin:100px 100px;">
     <div>
-      <label style="width: 250px">Name</label>
+      <label class="label_style">Name</label>
       <input name="name" required [(ngModel)]="name">
-    </div>
-    <div>
-      <label style="width: 250px">Age</label>
-      <input name="age" type="number" ngModel required [(ngModel)]="age">
-    </div>
-    <div>
-      <label style="width: 250px">Death Amount Insure</label>
-      <input name="amount" type="number" ngModel required [(ngModel)]="deathSumInsured">
-    </div>
-    <div>
-      <label style="width: 250px">Date Of Birth</label>
-      <input type="date" required />
-    </div>
-    <div style="width:450px">
-      <label >Occupation</label>
-      <select [(ngModel)]='occupation' name="dropdownOption" id="dropdownOption" class='form-control' (change)="setValue(f )">
-        <option selected disabled hidden>-------Select Occupaiton------</option>
-        <option>Cleaner</option>
-        <option>Doctor</option>
-        <option>Author</option>
-        <option>Farmer</option>
-        <option>Mechanic</option>
-        <option>Florist</option>
-      </select>
-    </div>
-    <h3> Premium Value  {{ premium }}</h3>
-  </form>
+      
+      </div>
+      <div>
+        <label class="label_style">Age</label>
+        <input name="age" type="number" ngModel required [(ngModel)]="age">
+      </div>
+      <div>
+        <label class="label_style">Death Amount Insure</label>
+        <input name="amount" type="number" ngModel required [(ngModel)]="deathSumInsured">
+      </div>
+      <div>
+        <label class="label_style">Date Of Birth</label>
+        <input type="date" required />
+      </div>
+      <div style="width:450px">
+        <label class="label_style">Occupation</label>
+        <select [(ngModel)]='occupation' name="dropdownOption" id="dropdownOption" class='form-control' (change)="setValue(f )">
+          <option selected disabled hidden>-------Select Occupaiton------</option>
+          <option>Cleaner</option>
+          <option>Doctor</option>
+          <option>Author</option>
+          <option>Farmer</option>
+          <option>Mechanic</option>
+          <option>Florist</option>
+        </select>
+      </div>
+      <h3> Premium Value  {{ premium }}</h3>
+</form>
   <p>Form valid: {{ errorMessage }}</p>
   `
   </div>
+<style>
+  .label_style{
+    width:250px;
+    font-weight:700;
+    font-size:20px;
+    margin:10px 10px 10px 10px;
+    color:firebrick;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+</style>
