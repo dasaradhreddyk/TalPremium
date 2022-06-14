@@ -18,13 +18,13 @@ export class SimpleFormComp {
   public name: string = "";
   public age: number = 0;
   public deathSumInsured: number = 0;
-  public dob: Date = new Date();
+  public dob: Date;
  
   public occupation: string = "";
 
   constructor(http: HttpClient
   ) {
-   
+    this.dob = new Date('1/1/2000');
     this.http = http;
     this.baseUrl = "";
   }
@@ -33,14 +33,16 @@ export class SimpleFormComp {
   }
 
   setAge(value: NgForm) {
-    this.age = calculateAge(this.dob);;
+    this.age = calculateAge(this.dob);
+    console.log(this.dob);
+    
    
   }
 
   setValue(value: NgForm) {
     console.log(this.dob);
     this.age = calculateAge(this.dob);
-    
+  
     if (!value.valid ) { 
     this.errorMessage = "All feilds are mandatory";
     return;
