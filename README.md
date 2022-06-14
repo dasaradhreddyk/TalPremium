@@ -8,6 +8,6 @@ i.	Amount value should be positive.
      iii.	Age calculated based on the date picker. It will be in years.
 5.	Unit testing added with xunit which will unit test all the service end points and services.
 
-     
+PS: inline validations are used and also styles can be seperated to css file.
 
 ![image](https://user-images.githubusercontent.com/58421595/173187085-aea8f2d8-0ae8-467a-b628-9fcf887cb2b6.png)
