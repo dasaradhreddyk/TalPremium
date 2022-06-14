@@ -13,7 +13,7 @@
             <label class="label_style">Date Of Birth</label>
           </td>
           <td>
-            <input style="width:300px" type="date" class="form-control" id="dob" name="dob"
+            <input style="width:300px" type="date" class="form-control" id="dob" name="dob"  (change)="setAge( f)" 
                    [ngModel]="dob| date:'yyyy-MM-dd'" formControlName="dob">
           </td>
         </tr>
