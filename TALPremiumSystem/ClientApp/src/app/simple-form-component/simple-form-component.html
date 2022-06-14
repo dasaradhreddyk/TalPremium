@@ -13,8 +13,8 @@
             <label class="label_style">Date Of Birth</label>
           </td>
           <td>
-            <input style="width:300px" type="date" class="form-control" id="dob" name="dob"  (change)="setAge( f)" 
-                   [ngModel]="dob| date:'yyyy-MM-dd'" formControlName="dob">
+            <input style="width:300px" type="date" class="form-control"  (change)="setAge( f)" 
+                    [(ngModel)]='dob'  formControlName="dob">
           </td>
         </tr>
        
@@ -54,7 +54,9 @@
 
 
     </div>
-    <h3> Premium Value : $  {{ premium }}</h3>
+    <div class="label_style">
+      <h3> Premium Value : $  {{ premium }}</h3>
+    </div>
   </form>
   <p>Form valid: {{ errorMessage }}</p>
   `
