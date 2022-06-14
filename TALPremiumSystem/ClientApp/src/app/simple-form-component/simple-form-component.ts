@@ -38,9 +38,7 @@ export class SimpleFormComp {
 
     this.age = calculateAge(this.dob);
     console.log( this.dob.getFullYear());
-
     
-    this.age = 40;
     if (!value.valid ) { 
     this.errorMessage = "All feilds are mandatory";
     return;
