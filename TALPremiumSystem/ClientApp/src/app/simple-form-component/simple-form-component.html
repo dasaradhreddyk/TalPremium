@@ -13,7 +13,7 @@
             <label class="label_style">Date Of Birth</label>
           </td>
           <td>
-            <input [ngModel]="dob | date:'yyyy-MM-dd'"  (click) ="setAge(f) "
+            <input [ngModel]="dob | date:'yyyy-MM-dd'"  (change) ="setAge(f) "
                    (ngModelChange)="dob = $event" type="date" name="dob" />
           </td>
         </tr>
