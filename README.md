@@ -10,4 +10,5 @@ i.	Amount value should be positive.
 
 PS: inline validations are used and also styles can be seperated to css file.
 
-![image](https://user-images.githubusercontent.com/58421595/173187085-aea8f2d8-0ae8-467a-b628-9fcf887cb2b6.png)
+![image](https://user-images.githubusercontent.com/58421595/173562427-2faeb074-9f33-4edf-8dea-0e5b55b753ec.png)
+
