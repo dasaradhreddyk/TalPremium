@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
 import { HttpClient } from '@angular/common/http';
-
 
 
 @Component({
@@ -20,11 +18,13 @@ export class SimpleFormComp {
   public name: string = "";
   public age: number = 0;
   public deathSumInsured: number = 0;
+  public dob: Date = new Date();
  
   public occupation: string = "";
 
   constructor(http: HttpClient
   ) {
+   
     this.http = http;
     this.baseUrl = "";
   }
@@ -33,16 +33,39 @@ export class SimpleFormComp {
   }
 
   setValue(value: NgForm) {
+    console.log(this.dob);
+    var today = new Date();
+
+    this.age = calculateAge(this.dob);
+    console.log( this.dob.getFullYear());
+
+    
+    this.age = 40;
     if (!value.valid ) { 
     this.errorMessage = "All feilds are mandatory";
     return;
     };  
     this.errorMessage = "";
+    if (this.deathSumInsured < 0) {
+      this.errorMessage = "Death Amount Insured should be positive value";
+      return;
+    }
+
     console.log(this.occupation);
     this.http.get<number>(this.baseUrl + "premium?name=" + this.name + "&age=" + this.age + "&amount=" + this.deathSumInsured + "&occupation=" + this.occupation).subscribe(result => {
       this.premium = result;
     }, error => console.error(error));
+
+    
   }
+  
+}
+function calculateAge(dob: Date) {
+ 
+  var diff_ms = Date.now() - dob.getTime();
+  var age_dt = new Date(diff_ms);
+  var age = Math.abs(age_dt.getUTCFullYear() - 1970);
+  return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
 function Inject(arg0: string) {
