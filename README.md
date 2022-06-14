@@ -4,8 +4,8 @@ The following design principles used while implementing the premium calculation 
 3.	Creation pattern used to initiate all builder objects required.
 4.	Angular component will consume API end point. UI implemented with following validations
 i.	Amount value should be positive.
-ii.	Any value is not given value , form will be validated.
-iii.	Age calculated based on the date picker. It will be in years.
+     ii.	all feilds are mandatory , form will be validated.
+     iii.	Age calculated based on the date picker. It will be in years.
 5.	Unit testing added with xunit which will unit test all the service end points and services.
 
      
