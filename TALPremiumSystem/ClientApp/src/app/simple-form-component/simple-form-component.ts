@@ -32,12 +32,14 @@ export class SimpleFormComp {
 
   }
 
+  setAge(value: NgForm) {
+    this.age = calculateAge(this.dob);;
+   
+  }
+
   setValue(value: NgForm) {
     console.log(this.dob);
-    var today = new Date();
-
     this.age = calculateAge(this.dob);
-    console.log( this.dob.getFullYear());
     
     if (!value.valid ) { 
     this.errorMessage = "All feilds are mandatory";
