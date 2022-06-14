@@ -18,7 +18,7 @@ export class SimpleFormComp {
   public name: string = "";
   public age: number = 0;
   public deathSumInsured: number = 0;
-  public dob: Date;
+  public dob: Date;;
  
   public occupation: string = "";
 
@@ -33,7 +33,7 @@ export class SimpleFormComp {
   }
 
   setAge(value: NgForm) {
-    this.age = calculateAge(this.dob);
+   // this.age = calculateAge(this.dob);
     console.log(this.dob);
     
    
@@ -41,8 +41,8 @@ export class SimpleFormComp {
 
   setValue(value: NgForm) {
     console.log(this.dob);
-    this.age = calculateAge(this.dob);
-  
+    this.age = calculateAge(this.dob, new Date());
+    console.log(this.age);
     if (!value.valid ) { 
     this.errorMessage = "All feilds are mandatory";
     return;
@@ -62,12 +62,11 @@ export class SimpleFormComp {
   }
   
 }
-function calculateAge(dob: Date) {
+function calculateAge(dob :Date,dt :Date) {
  
-  var diff_ms = Date.now() - dob.getTime();
-  var age_dt = new Date(diff_ms);
-  var age = Math.abs(age_dt.getUTCFullYear() - 1970);
-  return Math.abs(age_dt.getUTCFullYear() - 1970);
+  dt = dt || new Date();
+  var diff = dt.getTime() - new Date(dob).getTime();
+  return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
 }
 
 function Inject(arg0: string) {
