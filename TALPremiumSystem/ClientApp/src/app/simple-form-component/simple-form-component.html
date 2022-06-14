@@ -13,8 +13,8 @@
             <label class="label_style">Date Of Birth</label>
           </td>
           <td>
-            <input style="width:300px" type="date" class="form-control"  (change)="setAge( f)" 
-                    [(ngModel)]='dob'  formControlName="dob">
+            <input [ngModel]="dob | date:'yyyy-MM-dd'"  (click) ="setAge(f) "
+                   (ngModelChange)="dob = $event" type="date" name="dob" />
           </td>
         </tr>
        
@@ -33,7 +33,7 @@
       <input name="amount" type="number" ngModel required [(ngModel)]="deathSumInsured">
     </div>
 
-    <div style="width:450px">
+    <div style="width:360px">
       <table>
         <tr>
           <td><label class="label_style">Occupation</label></td>
@@ -63,7 +63,7 @@
   </div>
 <style>
   .label_style{
-    width:260px;
+    width:360px;
     font-weight:700;
     font-size:20px;
     margin:10px 10px 10px 10px;
