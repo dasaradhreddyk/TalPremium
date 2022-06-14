@@ -1,47 +1,71 @@
 
-<div style="border-color:orangered;border:ridge; border-color:forestgreen; width:800px">
+<div style="border-color:orangered;border:ridge; border-color:forestgreen; width:1200px">
   <form #f="ngForm" novalidate style="margin:100px 100px;">
     <div>
       <label class="label_style">Name</label>
       <input name="name" required [(ngModel)]="name">
+
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <label class="label_style">Date Of Birth</label>
+          </td>
+          <td>
+            <input style="width:300px" type="date" class="form-control" id="dob" name="dob"
+                   [ngModel]="dob| date:'yyyy-MM-dd'" formControlName="dob">
+          </td>
+        </tr>
+       
+
+      </table>
       
-      </div>
-      <div>
-        <label class="label_style">Age</label>
-        <input name="age" type="number" ngModel required [(ngModel)]="age">
-      </div>
-      <div>
-        <label class="label_style">Death Amount Insure</label>
-        <input name="amount" type="number" ngModel required [(ngModel)]="deathSumInsured">
-      </div>
-      <div>
-        <label class="label_style">Date Of Birth</label>
-        <input type="date" required />
-      </div>
-      <div style="width:450px">
-        <label class="label_style">Occupation</label>
-        <select [(ngModel)]='occupation' name="dropdownOption" id="dropdownOption" class='form-control' (change)="setValue(f )">
-          <option selected disabled hidden>-------Select Occupaiton------</option>
-          <option>Cleaner</option>
-          <option>Doctor</option>
-          <option>Author</option>
-          <option>Farmer</option>
-          <option>Mechanic</option>
-          <option>Florist</option>
-        </select>
-      </div>
-      <h3> Premium Value  {{ premium }}</h3>
-</form>
+      
+    </div>
+    <div>
+      <label class="label_style">Age</label>
+      <input name="age" disabled type="number" ngModel required [(ngModel)]="age">
+    </div>
+
+    <div>
+      <label class="label_style">Death Amount Insured</label>
+      <input name="amount" type="number" ngModel required [(ngModel)]="deathSumInsured">
+    </div>
+
+    <div style="width:450px">
+      <table>
+        <tr>
+          <td><label class="label_style">Occupation</label></td>
+          <td>
+            <select [(ngModel)]='occupation' name="dropdownOption" id="dropdownOption" class='form-control' (change)="setValue(f )">
+              <option selected disabled hidden>-------Select Occupaiton------</option>
+              <option>Cleaner</option>
+              <option>Doctor</option>
+              <option>Author</option>
+              <option>Farmer</option>
+              <option>Mechanic</option>
+              <option>Florist</option>
+            </select>
+          </td>
+        </tr>
+
+      </table>
+
+
+    </div>
+    <h3> Premium Value : $  {{ premium }}</h3>
+  </form>
   <p>Form valid: {{ errorMessage }}</p>
   `
   </div>
 <style>
   .label_style{
-    width:250px;
+    width:260px;
     font-weight:700;
     font-size:20px;
     margin:10px 10px 10px 10px;
-    color:firebrick;
+    color:black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
 
